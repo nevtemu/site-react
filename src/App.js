@@ -1,9 +1,11 @@
-import logo from './logo.svg';
 import './style.css';
+import {containers, social} from "./cards.mjs"
 
 function App() {
   return (
-    
+    <>
+    {containers[0].cards}
+    </>
   );
 }
 
