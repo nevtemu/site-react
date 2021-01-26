@@ -7,7 +7,7 @@ const Card = ({name_eng, picture, description_eng}) => {
         return (
             <div className="card" style={style}>
                 <div className="name">{name_eng}</div>
-                <div className="description">{description_eng}</div>
+                <div id="description" className="description">{description_eng}</div>
             </div>
         )
 }
