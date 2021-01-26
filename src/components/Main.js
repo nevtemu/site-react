@@ -7,7 +7,7 @@ const Main = () => {
     return (
         <>
         <Layout/>
-        <section>
+        <section className="group">
         {cards.map(card=><Card key={card.id} {...card}></Card>)}
     </section>
     </>

@@ -7,4 +7,27 @@
   height:200px;
   width:400px;
   border-radius:10px;
+
+}
+.group{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  margin: 10px;
+}
+.menu{
+  backdrop-filter: saturate(50%) blur(15px);
+  z-index:0;
+  margin: auto;
+  height: 43px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+
+.menuText{
+  z-index:11;
 }
