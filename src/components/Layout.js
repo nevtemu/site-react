@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-export default class line extends Component {
+export default class Layout extends Component {
     render() {
         return (
             <div>
-                
+                Layout buttons
             </div>
         )
     }

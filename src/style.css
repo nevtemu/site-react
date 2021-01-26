@@ -1,3 +1,10 @@
 *{
-  
+  margin: 0;
+}
+.card{
+  background-repeat:no-repeat;
+  color:white;
+  height:200px;
+  width:400px;
+  border-radius:10px;
 }
