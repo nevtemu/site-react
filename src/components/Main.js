@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import Card from './Card'
+import CardBlock from './CardBlock'
 import {cards} from "./cards.js"
 import { ReactComponent as SvgGallery } from "../assets/th-large-solid.svg"
 import { ReactComponent as SvgList } from "../assets/th-list-solid.svg"
+import { ReactComponent as SvgSlider } from "../assets/clone-solid.svg"
+import { ReactComponent as SvgMode } from "../assets/adjust-solid.svg"
 
 
 const Main = () => {
@@ -25,9 +27,11 @@ const Main = () => {
             <section className="group layouts">
                 <div className="clear" id="galleryView" onClick={switchView}><SvgGallery/></div>
                 <div className="clear" id="listView" onClick={switchView}><SvgList/></div>
+                <div className="clear" id="sliderView" onClick={switchView}><SvgSlider/></div>
+                <SvgMode/>
             </section>
-            <section id="cardsContainer" className="group">
-            {cards.map(card=><Card key={card.id} {...card}></Card>)}
+            <section id="cardsContainer">
+            {cards.map(group=><CardBlock key={group.id} {...group}></CardBlock>)}
             </section>
         </>
     ) 
