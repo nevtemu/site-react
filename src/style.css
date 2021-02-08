@@ -1,14 +1,19 @@
 *{
   margin: 0;
+}
+:root{
+  --color: rgb(241, 241, 241);
+  --bg-color:  rgba(0,0,0,1);
+  --bg-gradient:  rgba(45,45,45,1);
 
 }
 body{
-/* background-color: rgb(45, 45, 45); */
-background: rgb(0,0,0);
-background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(45,45,45,1) 27%);
+background:var(--bg-color);
+background: linear-gradient(180deg,var(--bg-color) 0%, var(--bg-gradient) 27%);
 background-repeat: no-repeat;
 height: 100%;
-color: rgb(241, 241, 241);
+color: var(--color);
+transition: 1s; /*for smooth transition animations*/
 }
 .layouts svg, .mode svg, .menu a svg{
   height: 30px;
@@ -96,10 +101,10 @@ cursor: pointer;
 
 
 .footer{
-  background: rgb(82,80,80);
-  background: linear-gradient(180deg, rgba(45,45,45,1) 0%, rgba(0,0,0,1) 92%);
+  background: var(--bg-gradient);
+  background: linear-gradient(180deg,var(--bg-gradient) 0%,var(--bg-color) 92%);
 height: 100px;
-color: rgb(241, 241, 241);
+color: var(--color);
 display: flex;
 
 }
