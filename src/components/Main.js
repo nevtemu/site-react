@@ -9,24 +9,27 @@ import { ReactComponent as SvgSlider } from "../assets/clone-solid.svg"
 
 const Main = () => {
     const [view, setView] = useState('galleryView');
-    const activeStyle = {color:"grey"};
-    // useEffect(() => {document.querySelector('#cardsContainer').classList='group'
-    // document.querySelector('#cardsContainer').classList.add(view)})
+    const activeStyle = `grey`;
+    useEffect(() => {
+        let a = document.getElementsByClassName('clear');
+        console.log(a)
+        for(let n of a){
+            n.style.color='rgb(241,241,241)';
+        };
+        document.querySelector(`#${view}`).style.color=activeStyle;
+})
     function switchView(e) {
-        let target;
-        if(e.target.parentElement.id){target = e.target.parentElement.id}
-        else {target = e.target.parentElement.parentElement.id}
-        // console.log(`target - ${target}`)
-        // console.log(`view - ${view}`)
-        // console.log(target !== view)
-        if (target !== view){setView(target)}
+        let targetView;
+        if(e.target.parentElement.id){targetView = e.target.parentElement.id}
+        else {targetView = e.target.parentElement.parentElement.id}
+        if (targetView !== view){setView(targetView)}
     }
 
     return (
         <>
             <section className="group settings">
                 <article className="group layouts">
-                    <div className="clear" id="galleryView" style={activeStyle} onClick={switchView} title="Gallery view"><SvgGallery/></div>
+                    <div className="clear" id="galleryView"  onClick={switchView} title="Gallery view"><SvgGallery/></div>
                     <div className="clear" id="listView" onClick={switchView} title="List view"><SvgList/></div>
                     <div className="clear" id="sliderView" onClick={switchView} title="Slider view"><SvgSlider/></div>
                 </article>
