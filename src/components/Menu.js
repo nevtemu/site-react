@@ -9,7 +9,7 @@ export default class menu extends Component {
     render() {
         return (
             <div className="menu">
-                <div className="menuText">Menu</div>
+                <div className="menuText">Menu placeholder</div>
                 <div className="social group">
                     <a href="https://github.com/nevtemu"><SvgGithub/></a>
                     <a href="https://www.linkedin.com/in/artem-soroka/"><SvgLinkedIn/></a>

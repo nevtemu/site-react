@@ -10,7 +10,7 @@ background-repeat: no-repeat;
 height: 100%;
 color: rgb(241, 241, 241);
 }
-.layouts svg, .menu a svg{
+.layouts svg, .mode svg, .menu a svg{
   height: 30px;
   width: 30px;
 }
@@ -25,13 +25,25 @@ color: rgb(241, 241, 241);
 .menu a:visited{
   color:rgb(241, 241, 241);  
 }
-/* .clear{
-  background: none;
-  border: none;
-} */
-.layouts svg:hover, .menu svg:hover{
+.cardsContainer{
+  display: flex;
+  flex-direction: column;
+}
+.groupName{
+  font-size: 26px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+
+  /* Next is hr above group name */
+  border-top: 2px solid grey;
+  margin: 0 10px;
+  padding-top: 5px;
+}
+
+.layouts svg:hover, .menu svg:hover, .mode svg:hover{
 color: green;
 transform: scale(1.2);
+cursor: pointer;
 }
 
 .card{
@@ -60,9 +72,37 @@ transform: scale(1.2);
   top: 0;
   left: 0;
   z-index: 10;
+  display: flex;
 }
-
 
 .menuText{
   z-index:11;
+  padding: 10px;
+}
+.social{
+  margin-left: auto;
+}
+
+.settings{
+  display:flex;
+}
+.mode{
+
+  height: 30px;
+  margin: 10px;
+  margin-left: auto;
+}
+
+
+
+.footer{
+  background: rgb(82,80,80);
+  background: linear-gradient(180deg, rgba(45,45,45,1) 0%, rgba(0,0,0,1) 92%);
+height: 100px;
+color: rgb(241, 241, 241);
+display: flex;
+
+}
+.footer span{
+  align-self: flex-end;
 }

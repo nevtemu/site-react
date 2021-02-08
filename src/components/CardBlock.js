@@ -3,10 +3,12 @@ import Card from './Card'
 
 const CardBlock = ({group, cards}) => {
         return (
-            <article className="group">
-                <div className="groupName">{group}</div>
+            <>
+            <div className="groupName">{group}</div>
+            <article className="group cardBlock">
                 {cards.map(card=><Card key={card.id} {...card}></Card>)}
             </article>
+            </>
         )
 }
 export default CardBlock;

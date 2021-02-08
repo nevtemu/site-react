@@ -1,0 +1,40 @@
+.mode-switch-field{
+height: 20px;
+width: 40px;
+border-radius: 20px;
+border: 5px solid rgb(241,241,241);
+position: relative;
+cursor: pointer;
+}
+.mode-switch-slider{
+    height: 16px;
+    width: 16px;
+    border-radius: 20px;
+    position: absolute;
+    background-color:  rgb(241,241,241);
+    top: 2px;
+    left: 2px;
+}
+.mode-switch-lightToDark{
+    animation: to-dark linear 0.4s forwards;
+}
+@keyframes to-dark{
+    100%{
+        transform: translateX(20px);
+        background-color: yellow;
+    }
+}
+.mode-switch-darkToLight{
+    animation: to-light linear 0.4s forwards;
+}
+@keyframes to-light{
+    0%{
+        transform: translateX(20px);
+        background-color: yellow;    
+    }
+    100%{
+        transform: translateX(0px);
+        background-color: rgb(241,241,241);
+    }
+}
+
