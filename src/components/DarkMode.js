@@ -6,16 +6,17 @@ const DarkMode = () => {
     const [darkMode, setMode] = useState(false);
     function switchMode (){
         const a = document.querySelector('.mode-switch-slider');
-        // a.classList.toggle('mode-switch-light');
-        // a.classList.toggle('mode-switch-dark');
+        const b = document.querySelector('.mode-switch-field');
         a.classList.remove('mode-switch-darkToLight');
         a.classList.remove('mode-switch-lightToDark')
         setMode(!darkMode)
         if(darkMode){
             a.classList.add('mode-switch-darkToLight');
+            b.title="Switch to light mode";
         }
         else {
             a.classList.add('mode-switch-lightToDark');
+            b.title="Switch to dark mode";            
         }
         
 
