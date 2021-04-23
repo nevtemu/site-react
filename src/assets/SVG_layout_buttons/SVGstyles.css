@@ -1,0 +1,91 @@
+#svg-details, #svg-gallery, #svg-cards{
+    cursor:pointer;
+}
+/* Layout with details SVG animation */
+/* Note: here can make shorter version were single entire block will move down on hover. Current design, however, allows more customization later (fade-in, drop-down etc.) */
+#details-line1,  #details-line2, #details-line3, #details-line4, #details-line5{
+    transition: all 1s ease;
+}
+#details-line1 {
+    transform: translateY(-63%);
+}
+#details-line2 {
+    transform: translateY(-33%);
+}
+#details-line3 {
+    transform: translateY(-3%);
+}
+#details-line4 {
+    transform: translateY(27%);
+}
+#details-line5 {
+    transform: translateY(57%);
+}
+#svg-details:hover #details-line1{
+    transform: translateY(-3%);
+}
+#svg-details:hover #details-line2{
+    transform: translateY(27%);
+}
+#svg-details:hover #details-line3{
+    transform: translateY(57%);
+}
+#svg-details:hover #details-line4{
+    transform: translateY(88%);
+}
+#svg-details:hover #details-line5{
+    transform: translateY(117%);
+}
+/* Layout Gallery SVG animation */
+#gallery-slide1, #gallery-slide2, #gallery-slide3, #gallery-slide4{
+    opacity: 0.8;
+    transition: all 1s ease;
+}
+#gallery-slide1{
+    transform: scale(0.7) translate(-37%, 21%);
+}
+#gallery-slide2{
+    transform: none;
+    opacity: 1;
+}
+#gallery-slide3{
+    transform: scale(0.7) translate(80%, 21%);
+    opacity: 0.8;
+}
+#gallery-slide4{
+    transform: scale(0.7) translate(157%, 21%);
+}
+#svg-gallery:hover #gallery-slide1{
+    transform: scale(0.7) translate(-105%, 21%);
+}
+#svg-gallery:hover #gallery-slide2{
+    transform: scale(0.7) translate(-37%, 21%);
+    opacity: 0.8;
+}
+#svg-gallery:hover #gallery-slide3{
+    transform: none;
+    opacity: 1;
+}
+#svg-gallery:hover #gallery-slide4{
+    transform: scale(0.7) translate(80%, 21%);
+}
+/* Layout Cards SVG animation */
+#svg-cards:hover #cards-card1, #svg-cards:hover #cards-card2, #svg-cards:hover #cards-card3, #svg-cards:hover #cards-card4{
+    animation: svg-cards 1s linear forwards; 
+    opacity: 0;
+    transform: translateY(-3%)
+}
+#svg-cards:hover #cards-card2{
+    animation-delay: 0.2s;
+}
+#svg-cards:hover #cards-card3{
+    animation-delay: 0.4s;
+}
+#svg-cards:hover #cards-card4{
+    animation-delay: 0.6s;
+}
+@keyframes svg-cards {
+    25%, 100%{opacity: 1;  
+        transform: translateY(0%)
+    }           
+}

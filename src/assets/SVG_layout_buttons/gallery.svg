@@ -1,0 +1,8 @@
+    <svg id="svg-gallery" width="120" height="100" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="gallery-main">
+            <rect id="gallery-slide1" x="32" y="31" width="56" height="38" rx="5" fill="#C4C4C4"/>
+            <rect id="gallery-slide2" class="gallery-scale2" x="32" y="31" width="56" height="38" rx="5" fill="#C4C4C4"/>
+            <rect id="gallery-slide3" class="gallery-scale3" x="32" y="31" width="56" height="38" rx="5" fill="#C4C4C4"/>
+            <rect id="gallery-slide4" x="32" y="31" width="56" height="38" rx="5" fill="#C4C4C4"/>
+        </g>
+    </svg>

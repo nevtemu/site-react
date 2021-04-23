@@ -16,8 +16,8 @@ color: var(--color);
 transition: 1s; /*for smooth transition animations*/
 }
 .layouts svg, .mode svg, .menu a svg{
-  height: 30px;
-  width: 30px;
+  height: 100px;
+  width: 120px;
 }
 .menu a svg{
   height: 30px;

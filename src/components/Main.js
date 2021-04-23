@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react'
 import CardBlock from './CardBlock'
 import DarkMode from './DarkMode'
 import {cards} from "./cards.js"
-import { ReactComponent as SvgGallery } from "../assets/th-large-solid.svg"
-import { ReactComponent as SvgList } from "../assets/th-list-solid.svg"
-import { ReactComponent as SvgSlider } from "../assets/clone-solid.svg"
+import { ReactComponent as SVGCards } from "../assets/SVG_layout_buttons/cards.svg"
+import { ReactComponent as SVGDetails } from "../assets/SVG_layout_buttons/details.svg"
+import { ReactComponent as SVGGallery } from "../assets/SVG_layout_buttons/gallery.svg"
+import "../assets/SVG_layout_buttons/SVGstyles.css";
 
 
 const Main = () => {
@@ -29,9 +30,9 @@ const Main = () => {
         <>
             <section className="group settings">
                 <article className="group layouts">
-                    <div className="clear" id="galleryView"  onClick={switchView} title="Gallery view"><SvgGallery/></div>
-                    <div className="clear" id="listView" onClick={switchView} title="List view"><SvgList/></div>
-                    <div className="clear" id="sliderView" onClick={switchView} title="Slider view"><SvgSlider/></div>
+                    <div className="clear" id="galleryView"  onClick={switchView} title="Gallery view"><SVGCards/></div>
+                    <div className="clear" id="listView" onClick={switchView} title="List view"><SVGDetails/></div>
+                    <div className="clear" id="sliderView" onClick={switchView} title="Slider view"><SVGGallery/></div>
                 </article>
                 <article className="mode">
                     <DarkMode/>

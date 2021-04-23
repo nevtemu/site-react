@@ -1,0 +1,8 @@
+        <svg id="svg-cards" width="120" height="100" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="cards-main">
+                <rect id="cards-card1" x="4" y="11" width="53" height="36" rx="5" fill="#C4C4C4"/>
+                <rect id="cards-card2" x="63" y="11" width="53" height="36" rx="5" fill="#C4C4C4"/>
+                <rect id="cards-card4" x="63" y="53" width="53" height="36" rx="5" fill="#C4C4C4"/>
+                <rect id="cards-card3" x="4" y="53" width="53" height="36" rx="5" fill="#C4C4C4"/>
+            </g>
+        </svg>

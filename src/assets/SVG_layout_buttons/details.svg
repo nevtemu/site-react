@@ -1,0 +1,30 @@
+    <svg id="svg-details" width="120" height="100" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="details-main">
+            <g id="details-line1">
+                <rect id="details-line1-rect1" x="5" y="12" width="29" height="21" rx="5" fill="#C4C4C4"/>
+                <rect id="details-line1-rect2" x="38" y="16" width="72" height="6" fill="#C4C4C4"/>
+                <rect id="details-line1-rect3" opacity="0.5" x="38" y="24" width="66" height="6" fill="#C4C4C4"/>
+            </g>
+
+            <g id="details-line2">
+                <rect id="details-line2-rect1" x="5" y="12" width="29" height="21" rx="5" fill="#C4C4C4"/>
+                <rect id="details-line2-rect2" x="38" y="16" width="53" height="6" fill="#C4C4C4"/>
+                <rect id="details-line2-rect3" opacity="0.5" x="38" y="24" width="70" height="6" fill="#C4C4C4"/>
+            </g>
+            <g id="details-line3">
+                <rect id="details-line3-rect1" x="5" y="12" width="29" height="21" rx="5" fill="#C4C4C4"/>
+                <rect id="details-line3-rect2" x="38" y="16" width="61" height="6" fill="#C4C4C4"/>
+                <rect id="details-line3-rect3" opacity="0.5" x="38" y="24" width="72" height="6" fill="#C4C4C4"/>
+            </g>
+            <g id="details-line4">
+                <rect id="details-line4-rect1" x="5" y="12" width="29" height="21" rx="5" fill="#C4C4C4"/>
+                <rect id="details-line4-rect2" x="38" y="16" width="57" height="6" fill="#C4C4C4"/>
+                <rect id="details-line4-rect3" opacity="0.5" x="38" y="24" width="44" height="6" fill="#C4C4C4"/>
+            </g>
+            <g id="details-line5">
+                <rect id="details-line5-rect1" x="5" y="12" width="29" height="21" rx="5" fill="#C4C4C4"/>
+                <rect id="details-line5-rect2" x="38" y="16" width="68" height="6" fill="#C4C4C4"/>
+                <rect id="details-line5-rect3" opacity="0.5" x="38" y="24" width="72" height="6" fill="#C4C4C4"/>
+            </g>
+        </g>
+        </svg>
